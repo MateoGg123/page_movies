@@ -32,8 +32,8 @@ export const Home = () => {
         let resultado = await helpHttp().get(API_URL)
         resultado = resultado.results;
       
-        setEstrenos(resultado.slice(0, 5));
-        setProximamente(resultado.slice(5, 10))
+        setEstrenos(resultado.slice(0, 6));
+        setProximamente(resultado.slice(14, 20))
         setTrending(resultado.slice(10, 15))
         //console.log(array_estrenos)
       
